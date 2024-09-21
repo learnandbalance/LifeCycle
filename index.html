@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Verdiğiniz Önem vs Hayatınızdaki Varlığı</title>
+    <style>
+        .chart-section {
+            display: flex;
+            justify-content: space-around; /* Place canvases side by side */
+            align-items: center;
+        }
+        canvas {
+            margin: 20px;
+            border: 1px solid black; /* Makes the canvas border visible */
+        }
+        .chart-container {
+            text-align: center;
+        }
+        .title-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title-list input {
+            margin: 5px;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chart-section">
+        <div class="chart-container">
+            <h2>Verdiğiniz Önem</h2>
+            <canvas id="expectationsChart" width="500" height="500"></canvas>
+            <button id="fillExpectationsButton">Enter Expectations Scores</button>
+        </div>
+        <div class="title-list">
+            <h2>Edit Titles</h2>
+            <input type="text" id="title1" value="Aile">
+            <input type="text" id="title2" value="İkili İlişki">
+            <input type="text" id="title3" value="Kariyer">
+            <input type="text" id="title4" value="Eğitim">
+            <input type="text" id="title5" value="Sağlık">
+            <input type="text" id="title6" value="Spor">
+            <input type="text" id="title7" value="Finans">
+            <input type="text" id="title8" value="Diğer">
+            <input type="text" id="title9" value="Diğer">
+            <input type="text" id="title10" value="Diğer">
+        </div>
+        <div class="chart-container">
+            <h2>Hayatınızdaki Varlığı</h2>
+            <canvas id="realityChart" width="500" height="500"></canvas>
+            <button id="fillRealityButton" style="display:none;">Enter Reality Scores</button> <!-- Hidden initially -->
+        </div>
+    </div>
+
+    <script src="fillChart.js"></script>
+</body>
+</html>

@@ -41,21 +41,23 @@
         }
     }
         /* General styling for larger buttons */
-button {
-    padding: 30px 45px; /* Increase padding for larger clickable area */
-    font-size: 36px; /* Increase font size */
-    width: 2400px; /* Set a fixed width for the button */
-    border-radius: 10px; /* Optional: rounded corners */
-    cursor: pointer; /* Change cursor to pointer when hovering */
-    background-color: #000; /* Optional: black background color */
-    color: #fff; /* Optional: white text color */
+button /* Specific styling for score buttons */
+#fillExpectationsButton, #fillRealityButton {
+    padding: 20px 40px; /* Bigger padding for a larger clickable area */
+    font-size: 24px; /* Increase font size significantly */
+    width: 250px; /* Wider button */
+    border-radius: 10px; /* Optional: Rounded corners */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     border: none; /* Remove default borders */
+    cursor: pointer; /* Change cursor to pointer */
 }
 
-/* Optional: Add a hover effect for visual feedback */
-button:hover {
-    background-color: #333; /* Darken the background on hover */
+/* Optional: Hover effect for the buttons */
+#fillExpectationsButton:hover, #fillRealityButton:hover {
+    background-color: #444; /* Darker background on hover */
 }
+
 
 </style>
 </head>

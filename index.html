@@ -5,29 +5,42 @@
     <meta charset="UTF-8">
     <title>Verdiğiniz Önem vs Hayatınızdaki Varlığı</title>
     <style>
+    /* General styling for desktop */
+    .chart-section {
+        display: flex;
+        justify-content: space-around; /* Place canvases side by side */
+        align-items: center;
+        flex-wrap: wrap; /* Allow items to wrap on small screens */
+    }
+
+    canvas {
+        margin: 20px;
+        border: 1px solid black; /* Makes the canvas border visible */
+    }
+
+    /* Center the title inputs */
+    .title-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 600px) {
         .chart-section {
-            display: flex;
-            justify-content: space-around; /* Place canvases side by side */
-            align-items: center;
+            flex-direction: column; /* Stack items vertically on small screens */
         }
+
         canvas {
-            margin: 20px;
-            border: 1px solid black; /* Makes the canvas border visible */
+            width: 100%; /* Make the canvas responsive */
+            height: auto; /* Adjust height automatically to maintain aspect ratio */
         }
-        .chart-container {
-            text-align: center;
-        }
-        .title-list {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+
         .title-list input {
-            margin: 5px;
-            text-align: center;
-            font-size: 16px;
+            font-size: 14px; /* Adjust input font size for mobile */
         }
-    </style>
+    }
+</style>
 </head>
 <body>
     <div class="chart-section">
